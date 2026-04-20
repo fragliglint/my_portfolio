@@ -1,6 +1,7 @@
 // app/layout.js
 import "../app/globals.css";
 import { ThemeProvider } from "../context/ThemeContext";
+import SocialSidebar from "../components/SocialSidebar";
 
 export const metadata = {
   title: "Sifat Noor Siam — Full Stack Developer & ML Engineer",
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
           <div className="bg-decor" />
           <div className="app-wrapper">
             {children}
+            <SocialSidebar />
           </div>
         </ThemeProvider>
       </body>
