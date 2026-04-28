@@ -17,11 +17,11 @@ export const themes = [
 ];
 
 export function ThemeProvider({ children }) {
-    const [theme, setTheme] = useState("light");
+    const [theme, setTheme] = useState("dark");
     const [mounted, setMounted] = useState(false);
 
     useEffect(() => {
-        const savedTheme = localStorage.getItem("theme") || "light";
+        const savedTheme = localStorage.getItem("theme") || "dark";
         setTheme(savedTheme);
         setMounted(true);
         document.documentElement.setAttribute("data-theme", savedTheme);

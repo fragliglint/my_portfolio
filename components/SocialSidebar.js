@@ -7,8 +7,7 @@ export default function SocialSidebar() {
   const socials = [
     { icon: FiLinkedin, href: "https://bd.linkedin.com/in/sifat-noor-siam-953650206" },
     { icon: FiGithub, href: "https://github.com/fragliglint" },
-    { icon: FiTwitter, href: "#" },
-    { icon: FiInstagram, href: "#" },
+    { icon: FiInstagram, href: "https://www.instagram.com/fragliglint/" },
     { icon: FiFacebook, href: "https://www.facebook.com/Siamabir368" },
   ];
 

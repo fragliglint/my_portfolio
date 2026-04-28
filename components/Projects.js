@@ -9,26 +9,42 @@ const projects = [
   {
     title: "TrevioIT",
     desc: "A comprehensive IT solution platform for business management and service tracking.",
-    image: "/projects/trevio_it.png",
+    image: "/trevio1.png",
     tags: ["React", "Node", "Mongo DB", "Express"],
-    github: "#",
-    url: "#"
+    github: "https://github.com/fragliglint/trevioIT",
+    url: "https://trevioit.com"
+  },
+  {
+    title: "Ceylonztudio",
+    desc: "A professional creative studio and robust development hub specializing in high-performance web solutions.",
+    image: "/projects/ceylon.png", // Using as placeholder
+    tags: ["PHP", "Laravel", "MySQL", "Alpine.js", "Tailwind"],
+    github: "https://ceylonztudio.com",
+    url: "https://ceylonztudio.com"
   },
   {
     title: "Fish Classification AI",
     desc: "Cutting-edge AI application for identifying fish species using deep learning.",
     image: "/projects/fish_ai.png",
     tags: ["Python", "TensorFlow", "React", "Flask"],
-    github: "#",
-    url: "#"
+    github: "https://github.com/fragliglint/Fish_Classification",
+    url: "https://github.com/fragliglint/Fish_Classification"
   },
   {
     title: "Eventisa",
     desc: "A premium event management system for corporate and private gatherings.",
     image: "/projects/eventisa.png",
     tags: ["Next.js", "Firebase", "Stripe", "Framer"],
-    github: "#",
-    url: "#"
+    github: "https://github.com/fragliglint/Eventisa_an-event-management-system",
+    url: "https://eventisa.com"
+  },
+  {
+    title: "Shohochor App",
+    desc: "A mobile application integrating a custom-trained object detection model and Google Maps API. Built using React Native, Expo, and Docker.",
+    image: "/projects/Shohochor(English).jpeg",
+    tags: ["React Native", "Expo", "Docker", "Machine Learning", "Google Maps API"],
+    github: "https://github.com/fragliglint/Shohochor_App",
+    url: "https://github.com/fragliglint/Shohochor_App"
   },
 ];
 
@@ -63,7 +79,7 @@ export default function Projects() {
               <div className="card-content">
                 <h3 className="card-title">{project.title}</h3>
                 <p className="card-desc">{project.desc}</p>
-                
+
                 <div className="flex gap-4 mb-6">
                   <a href={project.github} className="social-icon-link" title="GitHub">
                     <FiGithub size={20} />

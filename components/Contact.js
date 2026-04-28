@@ -17,15 +17,34 @@ export default function Contact() {
     e.preventDefault();
     setStatus({ loading: true, message: null, error: false });
     
-    // Simulate API call
-    setTimeout(() => {
-       setStatus({ 
-         loading: false, 
-         message: "Message sent successfully!", 
-         error: false 
-       });
-       setForm({ name: "", email: "", message: "" });
-    }, 1500);
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(form),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setStatus({ 
+          loading: false, 
+          message: data.message || "Message sent successfully!", 
+          error: false 
+        });
+        setForm({ name: "", email: "", message: "" });
+      } else {
+        throw new Error(data.error || "Failed to send message");
+      }
+    } catch (error) {
+      setStatus({ 
+        loading: false, 
+        message: error.message || "An unexpected error occurred. Please try again.", 
+        error: true 
+      });
+    }
   };
 
   return (
@@ -44,7 +63,7 @@ export default function Contact() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="hero-role" style={{ fontSize: '1.8rem', marginBottom: '20px', color: 'white' }}>
+            <h2 className="hero-role" style={{ fontSize: '1.8rem', marginBottom: '20px', color: 'var(--text-main)' }}>
               I will love to talk with. Send me email or DM me on my social media
             </h2>
             <p className="text-secondary" style={{ fontSize: '1.1rem', marginBottom: '10px' }}>

@@ -2,6 +2,7 @@
 "use client";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import ThemeSwitcher from "./ThemeSwitcher";
 
 export default function Header() {
   const navItems = [
@@ -45,6 +46,7 @@ export default function Header() {
             {item.label}
           </a>
         ))}
+        <ThemeSwitcher />
       </nav>
     </header>
   );
