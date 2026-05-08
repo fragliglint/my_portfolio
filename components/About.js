@@ -83,7 +83,7 @@ export default function About() {
             >
               <div style={{ position: 'relative', width: '100%', maxWidth: '400px', aspectRatio: '1/1', borderRadius: '30px', overflow: 'hidden', border: '1px solid var(--border-glass)' }}>
                 <Image
-                  src="/formal.jpg"
+                  src="/siam_formal.png"
                   alt="Sifat Noor Siam"
                   fill
                   style={{ objectFit: 'cover' }}
