@@ -60,14 +60,14 @@ export default function About() {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <p className="text-secondary" style={{ fontSize: '1.05rem', lineHeight: '1.8', marginBottom: '20px' }}>
+              <p className="text-secondary" style={{ fontSize: '1.05rem', lineHeight: '1.8', marginBottom: '20px', textAlign: 'justify' }}>
                 Innovative Computer Science student and published researcher with expertise in
                 deploying full-stack web applications and end-to-end machine learning systems.
                 I have demonstrated success in building AI-powered mobile applications, authoring
                 peer-reviewed conference papers, and developing high-performance commercial
                 websites using modern frameworks like Next.js and Laravel.
               </p>
-              <p className="text-secondary" style={{ fontSize: '1.05rem', lineHeight: '1.8' }}>
+              <p className="text-secondary" style={{ fontSize: '1.05rem', lineHeight: '1.8', textAlign: 'justify' }}>
                 I combine strong theoretical foundations with practical software engineering skills
                 to deliver impactful, intelligent solutions. Dedicated to bridging the gap between
                 advanced research and real-world application.
